@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=<form id="login-form">
+        <form action="profile.html" id="login-form" ></form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <button type="submit">Login</button>
+      </form>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+    </style>
+    <script>
+        const form = document.getElementById('login-form');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Check email and password against LocalStorage
+  // If match, redirect to profile page
+  // Otherwise, show error message
+});
+    </script>
+</body>
+</html>
